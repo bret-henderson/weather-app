@@ -1,5 +1,5 @@
 function formatUrl(searchStr, option) {
-  const url = `http://api.weatherapi.com/v1/${option}.json?key=1878fcfaf02d4971951195654230304&q=${searchStr}&aqi=yes`;
+  const url = `https://api.weatherapi.com/v1/${option}.json?key=1878fcfaf02d4971951195654230304&q=${searchStr}&aqi=yes`;
   return url;
 }
 

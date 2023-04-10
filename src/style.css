@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #e2e8f0;
+  padding: 16px;
+}
+
+.day-card {
+  max-width: 400px;
+}
+
+.location {
+  font-size: 1.5rem;
+}
+
+.temperature {
+  font-size: 3rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.temperature-unit {
+  font-size: 1.5rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+}
+
+.icon-text {
+  font-size: 1.5rem;
+  padding-bottom: 4px;
+}
+
+.high-low {
+  font-size: 1rem;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+#search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+  min-width: 160px;
+}
+
+#search-form input {
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 8px;
+}
+
+.submit-button-container {
+  align-self: center;
+  display: flex;
+  width: 100%;
+}
+
+.search-button {
+  padding: 6px 16px;
+  width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.extra-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(80px, 100%), 1fr));
+  gap: 16px;
+}
+
+.info-card > .data {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+
+  #search-form {
+    flex-direction: row;
+    padding-bottom: 16px;
+  }
+
+  .submit-button-container {
+    max-width: fit-content;
+  }
+}

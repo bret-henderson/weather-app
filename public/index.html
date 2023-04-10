@@ -5,23 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Weather App</title>
   <script src="../dist/main.js" defer></script>
+  <link rel="shortcut icon" href="#">
 </head>
 
 <body>
-  <div>
-    <img src="#" alt="current-weather-icon">
-  </div>
-  <div>
+  <div class="day-card">
+    <div class="location"></div>
+      <div class="temperature"></div>
+    <div class="current-weather-icon-containter">
+      <img src="#" alt="current-weather-icon">
+    </div>
+    <div class="icon-text"></div>
+    <div class="high-low">
+      <div class="high-temp"></div>
+      <div class="low-temp"></div>
+    </div>
+
     <form action="" method="get" id="search-form">
-      <label for="search-input">Search</label>
-      <input id="search-input" name="search-input" type="text">
+      <!-- <label for="search-input"></label> -->
+      <input id="search-input" name="search-input" type="text" placeholder="New York City...">
       <div class="submit-button-container">
-        <button type="submit">Search</button>
+        <button class="search-button" type="submit" display="none">Search</button>
       </div>
     </form>
+
+    <div class="extra-info">
+      <div class="info-card" id="feels-like">
+        <div class="title">Feels Like</div>
+        <div class="data"></div>
+      </div>
+      <div class="info-card" id="humidity">
+        <div class="title">Humidity</div>
+        <div class="data"></div>
+      </div>
+      <div class="info-card" id="aqi">
+        <div class="title">AQI</div>
+        <div class="data"></div>
+      </div>
+    </div>
+
   </div>
 </body>
 
